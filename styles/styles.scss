@@ -1,0 +1,404 @@
+@import "reset.scss";
+@import url('https://fonts.googleapis.com/css2?family=Lacquer&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Pragati+Narrow:wght@400;700&display=swap');
+
+
+/*
+SUMMARY
+
+#VIEW -> Style for view and its elements
+
+#TITLE -> Style for title only
+
+#PIN -> Style for pin
+
+#POSITION -> Handle positions in viewport for js
+*/
+
+body {
+  overflow: hidden; /* Hide scrollbars */
+}
+
+/*
+#VIEW Section
+
+Container styling;
+
+View general styling { 
+  (absolute)
+  element general styling;
+}
+
+View Number {
+  view--number__element--number styling;
+}
+
+!important: For Title styling refer to Title section
+*/
+
+.view__container {
+  position: absolute;
+  height: 500vh;
+  width: 500vw;
+  transition: transform 2s ease-in-out;
+  background: url("/assets/img/textureContainer.jpg");
+}
+
+.view {
+  position: absolute;
+  width: 110vw;
+  height: 110vh;
+
+  .element {
+    position: absolute;
+  }
+
+  .paper { 
+    // Chapter selection styling
+    background: no-repeat url("/assets/img/home/police/Paper.png");
+    background-size: cover;
+    display: flex;
+    font-family: 'Lacquer', cursive;
+    color: #f33a3a;
+    font-size: 35px;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+    width: 380px;
+    height: 135px;
+  }
+}
+
+.view--1 {
+  background: no-repeat url('/assets/img/Leviathan.png');
+  background-size: contain;
+
+  .view--1__element--1 {
+    background: no-repeat url("/assets/img/home/police/icionnoie.png");
+    top: 160px;
+    left: 250px;
+    width: 600px;
+    height: 800px;
+  }
+
+  .view--1__element--2 {
+    background: no-repeat url("/assets/img/home/police/unSeulHeros.png");
+    width: 200px;
+    background-position: center;
+    height: 300px;
+    top: 160px;
+    left: 175px;
+  }
+
+  .view--1__element--3 {
+    top: 220px;
+    left: 195px;
+    width: 410px;
+    transform: rotate(-2deg) scale(1.1);
+  }
+
+  .view--1__element--4 {
+    background: no-repeat url("/assets/img/home/police/icionnoie.png");
+    top: 80px;
+    right: 180px;
+    width: 300px;
+    height: 800px;
+  }
+
+  .view--1__element--5 {
+    // background: no-repeat url("/assets/img/home/bouna.png");
+    width: 400px;
+    background-position: center;
+    height: 220px;
+    top: 80px;
+    right: 245px;
+  }
+
+  .view--1__element--6 {
+    top: 140px;
+    right: 195px;
+    transform: rotate(6deg) scale(0.8);
+  }
+
+  .view--1__element--7 {
+    background: no-repeat url("/assets/img/home/police/icionnoie.png");
+    bottom: -500px;
+    right: 100px;
+    width: 300px;
+    height: 800px;
+  }
+
+  .view--1__element--8 {
+    background: no-repeat url("/assets/img/home/MalikOussekine.png");
+    width: 500px;
+    background-position: center;
+    height: 300px;
+    bottom: 80px;
+    right: 125px;
+  }
+
+  .view--1__element--9 {
+    bottom: 140px;
+    right: 115px;
+    transform: rotate(-8deg) scale(0.8);
+  }
+
+  .view--1__element--10 {
+    background: no-repeat url("/assets/img/home/police/icionnoie.png");
+    bottom: -550px;
+    left: 100px;
+    width: 300px;
+    height: 800px;
+  }
+
+  .view--1__element--11 {
+    background: no-repeat url("/assets/img/home/Police.png");
+    width: 300px;
+    background-position: center;
+    height: 300px;
+    bottom: 30px;
+    left: 185px;
+  }
+
+  .view--1__element--12 {
+    bottom: 90px;
+    left: 115px;
+    transform: rotate(3deg) scale(0.9);
+  }
+}
+
+.view--2 {
+
+  .view--2__element--1 {
+    background: no-repeat url("/assets/img/view--2/icionnoie\ 1.png");
+    background-size: cover;
+    background-position: center;
+    width: 900px;
+    height: 400px;
+    top: 130px;
+    left: 10px;
+  }
+
+  .view--2__element--2 {
+    right: 375px;
+    top: 380px;
+  }
+
+  .view--2__element--3 {
+    background: no-repeat url("/assets/img/texturePaper.png");
+    background-size: cover;
+    width: 400px;
+    height: 350px;
+    left: 100px;
+    top: 510px;
+    font-family: 'Pragati Narrow', sans-serif;
+    font-size: 30px;
+    padding: 20px 30px;
+    line-height: 130%;
+
+    span {
+      position: relative;
+    }
+
+    span::after {
+      content: "";
+      position: absolute;
+      background: BLACK;
+      top: 18px;
+      left: 0;
+      width: 143px;
+      height: 20px;
+      transform-origin: right;
+      transform: scaleX();
+      transition: all 0.7s;
+    }
+  }
+}
+
+.view--3 {
+
+  .view--3__element--1 {
+    background: no-repeat url("/assets/img/texturePaper.png");
+    background-size: cover;
+    top: 25px;
+    left: 230px;
+    width: 450px;
+
+    padding: 20px 80px 20px 30px;
+    line-height: 130%;
+    font-size: 30px;
+    font-family: 'Pragati Narrow', sans-serif;
+  }
+
+  .view--3__element--2 {
+    top: 95px;
+    left: 740px;
+    width: 500px;
+    height: 500px;
+    background: no-repeat url("/assets/img/view--3/algeriens17octobre.png");
+  }
+
+  .view--3__element--3 {
+    bottom: 150px;
+    left: 680px;
+  }
+}
+
+.view--4 {
+
+  .view--4__element--1 {
+    background: no-repeat url("/assets/img/texturePaper.png");
+    background-size: cover;
+    top: 365px;
+    left: 375px;
+    width: 550px;
+    padding: 50px 30px 20px 30px;
+    line-height: 130%;
+    font-size: 30px;
+    font-family: 'Pragati Narrow', sans-serif;
+  }
+  
+  .view--4__element--2 {
+    background: no-repeat url("/assets/img/view--4/mauricepaponjuges.png");
+    background-size: cover;
+    width: 600px;
+    height: 350px;
+    left: 75px;
+    top: 40px;
+  }
+
+  .view--4__element--3 {
+    left: 775px;
+    top: 250px;
+  }
+}
+
+/******************** View styling END *********************/
+
+/*
+#TITLE Section
+
+Title general styling {
+  title__view--number styling;
+}
+
+!important: for pin styling, refer to pin section
+*/
+
+.title {
+  position: relative;
+  font-family: 'Lacquer';
+  font-size: 75px;
+  color: #f33a3a;
+  text-align: center;
+
+  &.title__view--1 {
+    font-size: 105px;
+    font-family: "Staatliches", cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    stroke-dasharray: 10000;
+    stroke-dashoffset: 10000;
+    animation: dash 20s ease-in-out forwards;
+  }
+
+  &.title__view--2 {
+    position: relative;
+    top: 200px;
+    left: 180px;
+
+    &:first-child {
+      top: 30px;
+      left: -600px;
+    }
+  }
+
+  &.title__view--4 {
+    top: 75px;
+  }
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/******************** Title styling END *********************/
+
+/*
+#PIN Section
+
+  Pin general styling {
+    pin--type-size {
+      inner pin;
+    }
+  }
+*/
+
+.pin {
+  &.pin--red-medium {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    background: #f33a3a;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 4px 4px 8px rgba($color: #000000, $alpha: 0.3);
+
+    .inner {
+      background: #f33a3a;
+      margin: auto;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      box-shadow: 4px 4px 8px rgba($color: #000000, $alpha: 0.3);
+    }
+  }
+}
+
+
+
+/** Positioning classes **/
+
+.position--0 {
+  transform: translate(-5vw, -5vh);
+}
+
+.position--1 {
+  transform: translate(-105vw, -105vh);
+}
+
+.position--2 {
+  transform: translate(-125vw, -215vh);
+}
+
+.position--3 {
+  transform: translate(-85vw, -325vh);
+}
+
+.view--1 {
+  left: 0vw;
+  top: 0vh;
+}
+
+.view--2 {
+  // min gap
+  top: 110vh;
+  left: 110vw;
+}
+
+.view--3 {
+  top: 220vh;
+  left: 130vw;
+}
+
+.view--4 {
+  top: 330vh;
+  left: 90vw;
+}
